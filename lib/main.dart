@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:random_name_generator/random_name_generator.dart';
+
+import 'people_list.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final randomNames = RandomNames(Zone.us); // Afegeix aquesta linea.
     return MaterialApp(
       title: 'Benvinguts a Flutter',
       home: Scaffold(
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Benvinguts a Flutter'),
         ),
         body: Center(
-          child: Text(randomNames.fullName()),
+          child: const PeopleList(),
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_name_generator/random_name_generator.dart';
 
 class PeopleList extends StatefulWidget {
   const PeopleList({Key? key}) : super(key: key);
@@ -10,6 +11,7 @@ class PeopleList extends StatefulWidget {
 class _PeopleListState extends State<PeopleList> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    final randomNames = RandomNames(Zone.us); // Nou
+    return Text(randomNames.fullName()); // Nou
   }
 }
