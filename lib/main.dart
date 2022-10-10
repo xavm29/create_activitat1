@@ -10,14 +10,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final randomNames = RandomNames(Zone.us); // Afegeix aquesta linea.
     return MaterialApp(
       title: 'Benvinguts a Flutter',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Benvinguts a Flutter'),
         ),
-        body: const Center(
-          child: Text('Hola món!'),
+        body: Center(
+          child: Text(randomNames.fullName()),
         ),
       ),
     );
