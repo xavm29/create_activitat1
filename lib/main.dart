@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Benvinguts a Flutter',
+      title: 'Generador de noms de persona',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Benvinguts a Flutter'),
+          title: const Text('Generador de noms de persona'),
         ),
-        body: Center(
-          child: const PeopleList(),
+        body: const Center(
+          child: PeopleList(),
         ),
       ),
     );
   }
 }
+
