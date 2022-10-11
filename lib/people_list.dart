@@ -20,8 +20,9 @@ class _PeopleListState extends State<PeopleList> {
       itemBuilder: (context, i) {
         if (i.isOdd) return const Divider();
         final index = i ~/ 2;
+        //final index =i;
         if (index >= _suggestions.length) {
-//We add 10 more names
+     //We add 10 more names
           for (var i = 0; i < 10; i++) {
             _suggestions.add(_randomNames.fullName());
           }
